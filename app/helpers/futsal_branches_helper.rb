@@ -1,0 +1,2 @@
+module FutsalBranchesHelper
+end

@@ -1,0 +1,26 @@
+<h2>this is the branch page</h2>
+<h3>Branch List</h3>
+<table>
+	<tr>
+		<td style="color:red" colspan="2">Name</td>
+		<td style="color:red" colspan="2">location</td>
+		<td style="color:red" colspan="2">number</td>
+	</tr>
+	<% @branches.each do|list|%>
+	<tr>
+		<td colspan="2">
+			<%=list.name%>
+		</td>
+		<td colspan="2">
+			<%=list.location%>
+		</td>
+		<td colspan="2">
+			<%=list.phone_number%>
+		</td>
+		<td>
+		<%=link_to 'Edit',edit_futsal_main_futsal_branch_path(@futsal_main,list.id)%>
+		<%=link_to 'Delete',futsal_main_futsal_branch_path(@futsal_main,list.id) , method: 'Delete'%>
+		</td>
+	</tr>
+	<%end%>
+</table>

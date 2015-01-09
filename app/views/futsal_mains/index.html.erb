@@ -1,0 +1,27 @@
+<h2>this is the index page</h2>
+<h3>Futsal List</h3>
+<%=link_to 'Add new Futsal', new_futsal_main_path()%>
+<table>
+	<tr>
+		<td style="color:red" colspan="2">futsal Name</td>
+	</tr>
+	<% @futsal_mains.each do|list|%>
+	<tr>
+		<td>
+			<%=list.futsal_name%>
+		</td>
+		<td>
+		<%=link_to 'Edit', edit_futsal_main_path(list.id)%>
+		</td>
+		<td>
+		<%=link_to 'Add Branches',new_futsal_main_futsal_branch_path(list.id)%>
+		</td>
+		<td>
+		<%=link_to 'View Branches', futsal_main_futsal_branches_path(list.id)%>
+		</td>
+		<td>
+		<%= link_to 'Delete',futsal_main_path(list.id), method: 'delete'%>
+		</td>
+	</tr>
+	<%end%>
+</table>

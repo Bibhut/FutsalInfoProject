@@ -1,0 +1,11 @@
+<%= form_for [@futsal_main, @branch] do |f|%>
+	<%= f.label :BranchName%>
+	<%= f.text_field :name%>
+	</br>
+	<%= f.label :Location%>
+	<%= f.text_field :location%>
+	</br>
+	<%= f.label :PhoneNumber%>
+	<%= f.text_field :phone_number%>
+  <%=f.submit button_name%>
+<%end%>
