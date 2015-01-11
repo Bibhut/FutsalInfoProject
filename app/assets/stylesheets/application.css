@@ -11,3 +11,44 @@
  *= require_self
  *= require_tree .
  */
+ .main-page-css{
+ 	position: absolute;
+	top: 17%;
+	width: 100%;
+	text-align: center;
+ }
+ .main-page-css h2{
+ 	color: white;
+ }
+
+.editgrpmain {
+	position:absolute;
+  	top:40%;
+  	left:54%;
+}
+.editgrpmain h3{
+	text-align: center;
+}
+.editgrp{
+	border: 2px solid #08b;
+	padding: 15px;
+	
+}
+.mainDiv{
+	width: 500px;
+	position: absolute;
+	top: 25%;
+	left: 45%;
+}
+table th{
+	background: #E3EBED;
+	text-align: center;
+}
+
+.showbranch{
+	border: 2px solid #08b;
+	padding: 37px;
+	position: absolute;
+	top: 36%;
+	left: 50%;
+}

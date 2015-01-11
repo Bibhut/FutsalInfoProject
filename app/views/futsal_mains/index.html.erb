@@ -1,11 +1,21 @@
-<h2>this is the index page</h2>
+<html>
+</<html>
+<head>
+	
+</head>
+<body>
+	<img src="http://2.bp.blogspot.com/_4AiJIhyVEkM/TSsvL2Sc-dI/AAAAAAAAAJ8/8NimMlOdI4k/s1600/futsal.jpg">
+	<div class="mainDiv">
 <h3>Futsal List</h3>
-<%=link_to 'Add new Futsal', new_futsal_main_path()%>
-<table>
-	<tr>
-		<td style="color:red" colspan="2">futsal Name</td>
-	</tr>
+<table class='table table-bordered'>
+	<th>
+		Futsal Name
+	</th>
+	<th colspan="4">
+		Actions
+	</th>
 	<% @futsal_mains.each do|list|%>
+	
 	<tr>
 		<td>
 			<%=list.futsal_name%>
@@ -25,3 +35,8 @@
 	</tr>
 	<%end%>
 </table>
+<%=link_to 'Add new Futsal', new_futsal_main_path(), {:class => 'btn btn-success'}%>
+</div>
+</body>
+</html>
+

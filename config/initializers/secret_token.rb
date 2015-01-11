@@ -1,0 +1,1 @@
+FutsalInfoProject::Application.config.secret_token = 'd2e693ca65f11ddccfc3a399755864e1a6b693da384ac98bb13cf3022daea2f43c57ef40c227983ce321aa93f6a6854d05d69f59b0f5ab93763a4ab9399e7bfc'

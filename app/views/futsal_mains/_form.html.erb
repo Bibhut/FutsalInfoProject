@@ -1,5 +1,10 @@
 <%= form_for @futsal_main do |f|%>
-	<%= f.label :Name%>
-	<%= f.text_field :futsal_name%>
-  <%=f.submit button_name%>
+<div class="form-group editgrp">
+	<label>Name:</label>
+	<%= f.text_field :futsal_name, {:class => 'form-control'}%>
+	<br>
+	<%=f.submit button_name, {:class => 'btn btn-success'} %>
+
+  <%=link_to 'Back',  futsal_mains_path, {:class => 'btn btn-info'}%>
+  </div>
 <%end%>

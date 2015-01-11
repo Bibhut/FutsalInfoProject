@@ -23,6 +23,7 @@ class FutsalMainsController < ApplicationController
 
   def destroy
    @futsal_main=FutsalMain.find params[:id]
+   # binding.pry
    @futsal_main.destroy
    redirect_to futsal_mains_path 
   end
@@ -33,6 +34,9 @@ class FutsalMainsController < ApplicationController
     if @futsal_main.save
       redirect_to futsal_mains_path
     end
+
+  end
+  def main_page
   end
 
   # def add_branches
