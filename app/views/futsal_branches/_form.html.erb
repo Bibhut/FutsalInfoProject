@@ -1,13 +1,13 @@
 <%= form_for [@futsal_main, @branch] do |f|%>
 <div class="form-group editgrp">
 	<label>Name:</label>
-	<%= f.text_field :name, {:class => 'form-control'}%>
+	<%= f.text_field :name, {:class => 'form-control' , :required =>true}%>
 	</br>
 	<label>Location:</label>
-	<%= f.text_field :location, {:class => 'form-control'}%>
+	<%= f.text_field :location, {:class => 'form-control' , :required =>true}%>
 	</br>
 	<label>Phone Number:</label>
-	<%= f.text_field :phone_number, {:class => 'form-control'}%>
+	<%= f.text_field :phone_number, {:class => 'form-control' , :required =>true}%>
 	</br>
   <%=f.submit button_name, {:class => 'btn btn-success'} %>
 <%end%>
